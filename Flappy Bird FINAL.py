@@ -85,7 +85,7 @@ while running:
         frameNum = 0
 
     spawn_pipe += 1
-    if spawn_pipe >= 150:
+    if spawn_pipe >= (200 - (score / 3)):
         pipes.append(Pipe(800))
         spawn_pipe = 0
     for pipe in pipes:
